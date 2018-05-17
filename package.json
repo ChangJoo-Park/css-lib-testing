@@ -4,9 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/wire.css css/wire.css",
+    "build-cleancss": "cleancss -o css/wire.min.css css/wire.css",
+    "build-clean": "rimraf css",
+    "build-sass": "node-sass --output-style expanded --source-map true wire.scss css/wire.css",
+    "deploy": "npm run build",
+    "start": "npm run build-sass -- --watch"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.5.0",
+    "clean-css-cli": "^4.1.11",
+    "node-sass": "^4.9.0",
+    "postcss-cli": "^5.0.0",
+    "rimraf": "^2.6.2"
+  }
 }
