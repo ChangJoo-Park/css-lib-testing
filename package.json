@@ -1,6 +1,6 @@
 {
-  "name": "css-libs",
-  "version": "1.0.0",
+  "name": "wire.css",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,8 +13,8 @@
     "start": "npm run build-sass -- --watch"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "ChangJoo Park<pcjpcj2@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^8.5.0",
     "clean-css-cli": "^4.1.11",
