@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Song Myung', serif;
+}
+
+/**
+ * Shadows
+ */
+/** 
+ * Container
+ */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/**
+ * Section
+ */
+.section {
+  border-radius: 1.5em;
+  padding: 2em 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/**
+ * Card
+ */
+.card {
+  flex: 1;
+  background: #fff;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 22px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 350px;
+  height: 230px;
+  display: block;
+  position: relative;
+  margin-top: 2em;
+}
+
+/**
+ *
+ */
+.navigation {
+  font-size: 1rem;
+  display: flex;
+  width: 100%;
+  height: 81px;
+  padding: 0 2em;
+}
+
+.navigation .navigation-link {
+  color: #2a2828;
+  font-weight: bold;
+  float: left;
+  padding-top: 2em;
+  padding-bottom: 2px;
+  margin-left: 3em;
+  position: relative;
+}
+
+.navigation-left {
+  flex: 1;
+}
+
+/*# sourceMappingURL=wire.css.map */
